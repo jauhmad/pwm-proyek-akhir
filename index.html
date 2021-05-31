@@ -1,0 +1,90 @@
+<!-- Responsive Web Design -->
+<!DOCTYPE html>
+<html>
+<head>
+<!--  
+Set Viewport 
+      Digunakan untuk menyetel viewport halaman web yang akan memberikan instruksi browser tentang cara mengontrol dimensi dan penskalaan halaman. 
+-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <!--
+  manifest.json untuk Konfigurasi PWA
+  name             : Nama lengkap aplikasi. Digunakan saat meminta pengguna untuk menginstal aplikasi.
+  short_name       :  Nama yang muncul pd ikon
+  icons            : properti ikon
+  lang             : Bahasa default. Inggris
+  start_url        : Halaman yang akan dimuat saat aplikasi diluncurkan 
+  display          : Jenis shell tempat aplikasi akan muncul
+  background_color : Warna layar pembuka yang terbuka saat aplikasi diluncurkan
+  theme_color      : Menyetel warna bilah alat dan pengalih tugas 
+ -->
+<link rel="manifest" href="manifest.json">
+  
+ <!--
+  style.css untuk Style dengan Media Query
+ -->
+<link rel="stylesheet" href="css/style.css">  
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="images/hello-icon-152.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- Warna tema agar sesuai dengan yang ditetapkan dalam manifest -->
+  <meta name="theme-color" content="white"/>
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="CV Inbizz">
+  <meta name="msapplication-TileImage" content="images/hello-icon-144.png">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+
+</head>
+
+
+<body style="font-family:Verdana;">
+
+<div style="background-color:#f1f1f1;padding:15px;">
+  <h1><a href="index.html">CV. Inbizz</a></h1>
+  <h3>Teknlologi Untuk Masa Depan</h3>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <div class="menuitem"><a href="big_data.html">Big Data</a></div>
+    <div class="menuitem">Konsultan TI</div>
+    <div class="menuitem">Mobile</div>
+    <div class="menuitem">R & D</div>
+  </div>
+
+  <div class="main">
+    <h2>Solusi Big Data di Indonesia</h2>
+    <p>Big data adalah sebuah istilah yang digunakan untuk menggambarkan set data dalam ukuran yang sangat besar yang mungkin secara komputasi dianalisis untuk menemukan pola, trend, asosiasi, terutama dalam hubungannya terhadap interaksi dan tindakan manusia.</p>
+
+    <!-- 
+    Responsive Image
+    Gambar diskalakan dengan baik agar sesuai dengan ukuran browser apa pun. Properti lebar CSS diset ke 100%, sehingga gambar akan responsif dengak penskalaan vertikal dan horisontal
+     -->
+    <img src="https://kulonprogokab.go.id/jauhari/gedung.jpg">
+
+
+  </div>
+
+  <div class="right">
+    <h2>Visi dan Misi</h2>
+    <p>Menjadi Konsultan Teknologi Informasi, Solusi Outsource dan Penyedia Dukungan Operasional 'High End' & Middle End ', yang terbukti menjamin' Kesuksesan Pelanggan '
+    </p>
+    <h2>Alamat</h2>
+    <p>CV. Inbizz<br>
+       Jl. Diponegoro 12, Yogyakarta
+    </p>
+  </div>
+</div>
+
+  <!--
+    main.js
+    Kode ini dijalankan ketika website diakses, setelah itu akan mendaftarkan service worker (sw.js) yang berada di dalam folder root (PWA).
+ -->
+  <script src="js/main.js"></script>
+</body>
+</html>
