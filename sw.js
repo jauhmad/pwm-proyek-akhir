@@ -3,11 +3,11 @@ var cacheName = 'jauharicache';
 
 /* daftar file yang akan di-cache */
 var filesToCache = [
-  '/jauhari',
-  '/jauhari/index.html',
-  '/jauhari/big_data.html',
-  '/jauhari/css/style.css',
-  '/jauhari/js/main.js'
+  '/pwm-proyek-akhir-jauhari',
+  '/pwm-proyek-akhir-jauhari/index.html',
+  '/pwm-proyek-akhir-jauhari/big_data.html',
+  '/pwm-proyek-akhir-jauhari/css/style.css',
+  '/pwm-proyek-akhir-jauhari/js/main.js'
 ];
 
 
